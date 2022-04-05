@@ -1,0 +1,30 @@
+.news__info__h1, .popular__info__h1, .events__info__h1{
+    font-family: MonserratMedium;
+    font-size: 1.75rem;
+}
+.news_info__a, .popular__info__a, .events__info__a{
+    font-family: MonserratRegular;
+    font-size: 1.35rem;
+    color: #CB463E;
+    padding: 0 1.25rem;
+}
+
+.news, .popular, .events{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+
+}
+
+.news__cards, .popular__cards,.events__cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.675rem;
+    justify-content: center;
+    align-items: center;
+}
+.news__info, .popular__info, .events__info{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}

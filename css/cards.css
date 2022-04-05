@@ -1,0 +1,201 @@
+.card__news:nth-child(-n+3){
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 0.25rem;
+    background: #FFFFFF;
+    width: calc(97%/3);
+    height: 24.5rem;
+    transition: 0.9s;
+}
+
+.card__news:nth-child(n+4):nth-child(-n+5){
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 0.25rem;
+    background: #FFFFFF;
+    width: calc(98%/2);
+    height: 24.5rem;
+    transition: 0.9s;
+}
+
+.card__news:hover{
+    transform: scale(1.07);
+    transition: 0.9s;
+    z-index: 99;
+    background: #FFFFFF;
+}
+
+.card__news__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+.card__news__info__h2{
+    font-family: MonserratMedium;
+    font-size: 1.25rem;
+}
+
+.card__news__info__p{
+    font-family: MonserratMedium;
+    font-size: 1rem;
+    color: #7d7d7d;
+    text-align: right;
+}
+
+
+
+
+
+/*Стили для карточек книг на главной странице*/
+.card__book{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    box-sizing: border-box;
+    margin: 5px 0;
+    transition: 0.9s;
+    text-decoration: none;
+    width: 14.125rem;
+}
+
+.card__book:hover{
+    transform: scale(1.09);
+    transition: 0.9s;
+    z-index: 99;
+}
+.card__book img{
+    width: 14.125rem;
+    height: 18rem;
+}
+.card__book__info{
+    display: flex;
+    flex-direction: column;
+    padding:  0 10px;
+}
+
+.card__book__info__h2{
+    font-family: MonserratRegular;
+    font-weight: 400;
+    font-size: 1.125rem;
+    height: 22px;
+    color: black;
+    margin: 10px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card__book__info__block{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__book__info__block__info__author{
+    font-family: MonserratRegular;
+    font-size: 0.9rem;
+    color: #CB463E;
+    margin: 5px 0 0 0;
+}
+
+.card__book__info__block__info__nal__true{
+    font-family: MonserratRegular;
+    font-size: 0.9rem;
+    color: #898989;
+    margin: 5px 0;
+}
+
+.card__book__info__block__info__nal__false{
+    font-family: MonserratRegular;
+    font-size: 0.9rem;
+    color: #CB463E;
+    margin: 5px 0;
+}
+
+.card__book__info__block__ageLimit{
+    font-family: MonserratRegular;
+    font-size: 0.9rem;
+    color: #898989;
+    padding: 5px;
+    border: 1px solid #898989;
+    border-radius: 4px;
+}
+
+
+
+
+
+/*Стили для карточек мероприятий на главной странице*/
+.events__cards{
+    justify-content: space-between;
+}
+
+.card__event {
+    grid-area: item;
+    border-radius: 0.25rem;
+    box-shadow: 0.25rem 0.25rem 0.675rem rgba(0, 0, 0, 0.25);
+    object-fit: cover;
+    background: #FFFFFF;
+    width: 24.5rem;
+    height: 20.5rem;
+    box-sizing: border-box;
+    transition: 0.9s;
+}
+
+.card__event:hover{
+    transform: scale(1.07);
+    transition: 0.9s;
+    z-index: 99;
+}
+
+.card__event img{
+    position: absolute;
+    width: 24.5rem;
+    height: 20.5rem;
+}
+
+.card__event__info {
+    position: relative;
+    top: 13rem;
+    left: 0;
+}
+
+.card__event__info__container {
+    display: grid;
+    color: white;
+    grid-template-areas: "genre genre"
+                         "time title";
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1.25rem 3.75rem;
+    gap: 0.25rem;
+}
+
+.card__event__info__container-genre {
+    grid-area: genre;
+    padding: 0.125rem;
+    font-family: MonserratSemiBold;
+    font-size: 0.75rem;
+}
+
+.card__event__info__container-time {
+    padding: 0.5rem;
+    background: #CB463E99;
+    grid-area: time;
+    font-family: MonserratMedium;
+    font-size: 0.875rem;
+}
+
+.card__event__info__container-title {
+    grid-area: title;
+    border-left: 0.25rem solid #898989;
+    padding: 0.25rem;
+    font-family: MonserratSemiBold;
+    font-size: 1rem;
+}

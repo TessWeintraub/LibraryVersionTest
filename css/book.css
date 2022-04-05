@@ -1,0 +1,132 @@
+
+.book{
+    display: grid;
+    grid-template-areas: "image info" "image annotation";
+    padding: 1.5rem 0 3rem 0;
+    gap: 2rem;
+}
+.bx-wrapper {
+    position: relative;
+    padding: 0;
+    *zoom: 1;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    max-width: 32rem!important;
+    height: 40rem!important;
+    grid-area: image;
+}
+.book__slider{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.book__info{
+    display: flex;
+    flex-direction: column;
+    grid-area: info;
+    width: 100%;
+    gap:0.5rem
+}
+.book__info:last-child{
+    display: flex;
+    justify-content: right;
+}
+.book__info__name_limit{
+    display: flex;
+    align-items: center;
+    height: 3rem;
+}
+.book__info__name_limit__h1{
+    font-family: MonserratMedium;
+    font-size: 2rem;
+}
+.book__info__name_limit__age_limit{
+    font-family: MonserratRegular;
+    font-size: 1.3rem;
+    color: #7d7d7d;
+    border-radius: 0.25rem;
+    border: 1px solid #7d7d7d;
+    padding: 0.25rem 0.5rem;
+    margin-left: 2rem;
+}
+.book__info__author{
+    font-family: MonserratRegular;
+    font-size: 1.3rem;
+    color: #CB463E;
+}
+.book__info__hr{
+    height: 2px;
+    background: #898989;
+    border: 0;
+    width: 100%;
+    margin: 1.5rem 0;
+}
+.book__info__genre,.book__info__publishing,.book__info__year{
+    display: flex;
+    align-items: center;
+    height: 2rem;
+}
+
+.book__info__genre__p,
+.book__info__publishing__p,
+.book__info__year__p,
+.book__annotation__h2{
+    font-family: MonserratMedium;
+    color: #898989;
+    font-size: 1.1rem;
+    font-style: normal;
+    width: 10rem;
+}
+.book__annotation__p{
+    font-family: MonserratRegular;
+    font-size: 1rem;
+    text-align: justify;
+}
+.book__info__year__god{
+    font-family: MonserratRegular;
+    font-size: 1.1rem;
+}
+.book__info__genre__a,.book__info__publishing__a{
+    font-family: MonserratRegular;
+    font-size: 1.1rem;
+    color: #CB463E;
+    text-decoration: none;
+}
+.book__annotation{
+    display: flex;
+    flex-direction: column;
+    grid-area: annotation;
+}
+.book__annotation__cont{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.book__annotation__button{
+    font-family: MonserratRegular;
+    font-size: 1.35rem;
+    color: #FFFFFF;
+    background: #CB463E;
+    padding: 0.5rem 1.5rem;
+    border: 0;
+    border-radius: 0.25rem;
+    width: 15rem;
+}
+.book__slider__slide_1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media (min-width: 1280px) and (max-width: 1366px){
+    .book{
+        grid-template-areas: 'image info' 'annotation annotation';
+        grid-template-columns: 22rem 1fr;
+        padding: 1.5rem 0;
+    }
+    .book__info{
+        justify-content: space-between;
+    }
+
+}

@@ -1,0 +1,36 @@
+.header__nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.625rem 0;
+}
+
+.header__nav__ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.header__nav__ul__li{
+    padding: 0 1.875rem;
+    border-left: 0.125rem solid #898989;
+}
+
+.header__nav__ul__li:last-child{
+    border-right: 0.125rem solid #898989;
+}
+
+.header__nav__ul__li__a{
+    font-family: MonserratLight;
+    font-size: 1rem;
+    color: #898989;
+    text-decoration: none;
+}
+
+.header__nav__sign{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 9.5rem;
+    height: 4.1875rem;
+}

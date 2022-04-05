@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link href="./css/font.css" rel="stylesheet">
+    <link href="./css/style-global.css" rel="stylesheet">
+    <link href="./css/header.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/footer.css" rel="stylesheet">
+    <link href="./css/slide.css" rel="stylesheet">
+    <link href="./css/cards.css" rel="stylesheet">
+    <link href="./css/bxslider.css" rel="stylesheet">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script defer src="./js/slider.js" type="module"></script>
+    <script defer src="./js/main/createPopularCards.js" type="module"></script>
+    <script defer src="./js/catalog/getRequesting.js" type="module"></script>
+</head>
+<body>
+<header>
+    <nav class="header__nav wrapper">
+        <a href="main.html"> <img class="header__nav__logo" src="img/header/logo.svg"/></a>
+        <ul class="header__nav__ul">
+            <li class="header__nav__ul__li">
+                <a class="header__nav__ul__li__a" href="library.html">БИБЛИОТЕКА</a>
+            </li>
+            <li class="header__nav__ul__li">
+                <a class="header__nav__ul__li__a" href="catalog.html">КАТАЛОГ</a>
+            </li>
+            <li class="header__nav__ul__li">
+                <a class="header__nav__ul__li__a" href="events.html">СОБЫТИЯ</a>
+            </li>
+        </ul>
+        <a href="authorization.html" class="header__nav__sign"><img class="header__nav__sign__img" src="img/header/sign-in.svg"></a>
+    </nav>
+</header>
+
+<main>
+    <section class="section__slider wrapper">
+        <section class="slider">
+            <div class="slider__slide">
+                <img class="slider__slide__img" src="./img/slider/slide_1.jpg">
+                <div class="slider__slide__info">
+                    <h2 class="slider__slide__info__h2">Обновления зарубежной литературы</h2>
+                    <p class="slider__slide__info__p">В асссортименте появились произведения писателей Х. Мураками, Г. Мюссо, Х. С. Томсона, Д. Стейнбека и т. д.</p>
+                </div>
+            </div>
+            <div class="slider__slide">
+                <img class="slider__slide__img" src="./img/slider/slide_2.jpg">
+                <div class="slider__slide__info">
+                    <h2 class="slider__slide__info__h2">Абстракционизм. Василий Кандинский</h2>
+                    <p class="slider__slide__info__p">30.02.2022г. состоится лекция о В. Кандинском -  русском художнике, основоположнике абстрактного экспрессионизма </p>
+                </div>
+            </div>
+            <div class="slider__slide">
+                <img class="slider__slide__img" src="./img/slider/slide_3.jpg">
+                <div class="slider__slide__info">
+                    <h2 class="slider__slide__info__h2">Книжный клуб «Инклинги»</h2>
+                    <p class="slider__slide__info__p">10.03.2022г. состоится лекция о собраниях оксфордских писателей 1930-40-х гг.  Р. Р. Толкина, К.С. Льюиса, Ч. Уильямса, Ж. Л. Грина и т. д.</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="news wrapper">
+        <div class="news__info">
+            <h1 class="news__info__h1">Новости</h1>
+            <a class="news_info__a " href="events.html">Все события</a>
+        </div>
+        <div class="news__cards">
+            <div class="card__news">
+                <img src="./img/news/news_1.jpg">
+                <div class="card__news__info">
+                    <p class="card__news__info__h2">
+                        Интерактивный урок для учащихся школ о народном фолькоре
+                    </p>
+                    <p class="card__news__info__p">
+                        22.04.2022
+                    </p>
+                </div>
+            </div>
+            <div class="card__news">
+                <img src="./img/news/news_2.jpg">
+                <div class="card__news__info">
+                    <p class="card__news__info__h2">
+                        Презентация новой книги Александра Полярного  «Мятная сказка»
+                    </p>
+                    <p class="card__news__info__p">
+                        20.04.2022
+                    </p>
+                </div>
+            </div>
+            <div class="card__news">
+                <img src="./img/news/news_3.jpg">
+                <div class="card__news__info">
+                    <p class="card__news__info__h2">
+                        Открытие молодежного литературного клуба «За пределами книги»
+                    </p>
+                    <p class="card__news__info__p">
+                        19.04.2022
+                    </p>
+                </div>
+            </div>
+            <div class="card__news">
+                <img src="./img/news/news_4.jpg">
+                <div class="card__news__info">
+                    <p class="card__news__info__h2">
+                        В стенах библиотеки прошли сьемки документального фильма о местной архитектуре
+                    </p>
+                    <p class="card__news__info__p">
+                        17.04.2022
+                    </p>
+                </div>
+            </div>
+            <div class="card__news">
+                <img src="./img/news/news_5.jpg">
+                <div class="card__news__info">
+                    <p class="card__news__info__h2">
+                        Пополнение выставочного зала библиотеки  картинами  Виктора Малевуча и Леонида Уорхоловича
+                    </p>
+                    <p class="card__news__info__p">
+                        10.02.2022
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="background">
+        <section class="popular wrapper">
+            <div class="popular__info">
+                <h1 class="popular__info__h1">Популярное</h1>
+                <a class="popular__info__a" href="catalog.html"> К каталогу</a>
+            </div>
+            <div class="popular__cards">
+
+
+            </div>
+        </section>
+    </section>
+
+
+    <section class="events wrapper">
+        <div class="events__info">
+            <h1 class="events__info__h1">Мероприятия</h1>
+            <a class="events__info__a" href="events.html">Все события</a>
+        </div>
+        <div class="events__cards">
+            <div class="card__event">
+                <img src="./img/events/event_1.jpg" alt="" >
+                <div class="card__event__info">
+                    <div class="card__event__info__container">
+                        <div class="card__event__info__container-genre">кинопоказ</div>
+                        <div class="card__event__info__container-time">24 февраля <br> 18:00</div>
+                        <div class="card__event__info__container-title">
+                            «Четыреста ударов» Франсуа Трюффо
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card__event">
+                <img src="./img/events/event_2.jpg" alt="">
+                <div class="card__event__info">
+                    <div class="card__event__info__container">
+                        <div class="card__event__info__container-genre">литературный клуб</div>
+                        <div class="card__event__info__container-time">27 февраля <br> 16:00</div>
+                        <div class="card__event__info__container-title">
+                            Заседание книжного клуба «За пределами книги»
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card__event">
+                <img src="./img/events/event_3.jpg" alt="" >
+                <div class="card__event__info">
+                    <div class="card__event__info__container">
+                        <div class="card__event__info__container-genre">лекция</div>
+                        <div class="card__event__info__container-time">29 февраля <br> 14:30</div>
+                        <div class="card__event__info__container-title">
+                            Агата Кристи «Мать детективов»
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</main>
+<footer>
+    <div class="footer__container wrapper">
+        <a href="#"><img src="img/footer/logo.svg"></a>
+        <div class="footer__social">
+            <p class="footer__social__info">Мы в соцсетях:</p>
+            <div class="footer__social__img">
+                <a href="#"><img src="img/footer/social/youtube.svg"></a>
+                <a href="#"><img src="img/footer/social/facebook.svg"></a>
+                <a href="#"><img src="img/footer/social/inst.svg"></a>
+                <a href="#"><img src="img/footer/social/facebook.svg"></a>
+                <a href="#"><img src="img/footer/social/vk.svg"></a>
+            </div>
+        </div>
+        <div class="footer__container__adress">
+            <p class="footer__container__adress__p">+7 (800) 555-35-35</p>
+            <p class="footer__container__adress__p">ул. Тургеневская, 10/6</p>
+            <p class="footer__container__adress__p">example@email.ru</p>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

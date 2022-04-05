@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог</title>
+    <link href="./css/font.css" rel="stylesheet">
+    <link href="./css/style-global.css" rel="stylesheet">
+    <link href="./css/header.css" rel="stylesheet">
+    <link href="./css/footer.css" rel="stylesheet">
+    <link href="./css/library.css" rel="stylesheet">
+    <link href="css/catalog.css" rel="stylesheet">
+    <link href="./css/cards.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/filter.css" />
+    <script defer src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"></script>
+    <script defer src="./js/catalog/pagination.js" type="module"></script>
+    <script defer src="./js/catalog/getRequesting.js" type="module"></script>
+    <script defer src="./js/catalog/bookCardsCreating.js" type="module"></script>
+    <script defer src="./js/catalog/errorSearchCreating.js" type="module"></script>
+    <script defer src="./js/catalog/filtering.js" type="module"></script>
+    <script defer src="./js/catalog/buttonCreating.js" type="module"></script>
+    <script defer src="./js/catalog/pageCreating.js" type="module"></script>
+    <script defer src="./js/catalog/selectCreating.js" type="module"></script>
+</head>
+<body>
+<header>
+    <nav class="header__nav wrapper">
+        <a href="main.html"> <img class="header__nav__logo" src="img/header/logo.svg"/></a>
+        <ul class="header__nav__ul">
+            <li class="header__nav__ul__li">
+                <a class="header__nav__ul__li__a" href="library.html">БИБЛИОТЕКА</a>
+            </li>
+            <li class="header__nav__ul__li">
+                <a class="header__nav__ul__li__a" href="catalog.html">КАТАЛОГ</a>
+            </li>
+            <li class="header__nav__ul__li">
+                <a class="header__nav__ul__li__a" href="events.html">СОБЫТИЯ</a>
+            </li>
+        </ul>
+        <a href="authorization.html" class="header__nav__sign"><img class="header__nav__sign__img" src="img/header/sign-in.svg"></a>
+    </nav>
+</header>
+
+<main>
+    <div class="link wrapper">
+        <a class="link_a" href="main.html">Главная</a>
+        <p class="link_p">/ Каталог</p>
+    </div>
+    <section class="background">
+        <section class="search wrapper">
+            <h1 class="search__h1">Поиск книг</h1>
+            <hr class="search__hr"/>
+            <form class="search__form">
+                <div class="search__form__container">
+                    <input type="text" class="search__form__container__input" placeholder="Поиск по названию книги">
+                    <input  class="search__form__container__checkbox" id="search__checkbox" type="checkbox">
+                    <label style="display: flex; flex-direction: row-reverse" for="search__checkbox">В наличии</label>
+                </div>
+                <div class="search__form__container" >
+                    <select class="search__form__container__input__author"  placeholder="Выберите автора">
+                        <option value=""></option>
+                    </select>
+                    <select class="search__form__container__input__genre"  placeholder="Выберите жанр">
+                        <option value=""></option>
+                    </select>
+                    <select class="search__form__container__input__publishing" placeholder="Выберите издательство">
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div class="search__form__container">
+                    <button class="search__form__container__button" type="button">Найти</button>
+                </div >
+
+            </form>
+        </section>
+    </section>
+    <section class="catalog__cards wrapper">
+
+    </section>
+    <section class="pagination wrapper">
+        <ul class="pagination__ul">
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <div class="footer__container wrapper">
+        <a href="#"><img src="img/footer/logo.svg"></a>
+        <div class="footer__social">
+            <p class="footer__social__info">Мы в соцсетях:</p>
+            <div class="footer__social__img">
+                <a href="#"><img src="img/footer/social/youtube.svg"></a>
+                <a href="#"><img src="img/footer/social/facebook.svg"></a>
+                <a href="#"><img src="img/footer/social/inst.svg"></a>
+                <a href="#"><img src="img/footer/social/facebook.svg"></a>
+                <a href="#"><img src="img/footer/social/vk.svg"></a>
+            </div>
+        </div>
+        <div class="footer__container__adress">
+            <p class="footer__container__adress__p">+7 (800) 555-35-35</p>
+            <p class="footer__container__adress__p">ул. Тургеневская, 10/6</p>
+            <p class="footer__container__adress__p">example@email.ru</p>
+        </div>
+    </div>
+</footer>
+
+</script>
+</body>
+</html>

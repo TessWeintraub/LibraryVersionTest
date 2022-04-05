@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Личный кабинет</title>
+    <link href="./css/font.css" rel="stylesheet">
+    <link href="./css/style-global.css" rel="stylesheet">
+    <link href="./css/header.css" rel="stylesheet">
+    <link href="./css/footer.css" rel="stylesheet">
+    <link href="./css/authorization.css" rel="stylesheet">
+    <script defer src="./js/autharization/validation.js"></script>
+</head>
+<body>
+<header>
+    <nav class="header__nav wrapper">
+        <a href="main.html"> <img class="header__nav__logo" src="img/header/logo.svg"/></a>
+        <ul class="header__nav__ul">
+            <li class="header__nav__ul__li">
+                <a class="header__nav__ul__li__a" href="library.html">БИБЛИОТЕКА</a>
+            </li>
+            <li class="header__nav__ul__li">
+                <a class="header__nav__ul__li__a" href="catalog.html">КАТАЛОГ</a>
+            </li>
+            <li class="header__nav__ul__li">
+                <a class="header__nav__ul__li__a" href="events.html">СОБЫТИЯ</a>
+            </li>
+        </ul>
+        <a href="authorization.html" class="header__nav__sign"><img class="header__nav__sign__img" src="img/header/sign-in.svg"></a>
+    </nav>
+</header>
+<main>
+    <div class="link wrapper">
+        <a class="link_a" href="main.html">Главная</a>
+        <p class="link_p">/ Личный кабинет</p>
+    </div>
+    <section class="background">
+        <section class="authorization wrapper">
+            <h1 class="authorization__h1">Авторизация</h1>
+            <hr class="authorization_hr">
+
+
+
+
+            <form action="" class="authorization__form">
+                <div class="authorization__form__container">
+                    <label for="authorization__form__container__card">Номер читательского билета</label>
+                    <span>
+                            <input type="number" placeholder="000125638" class="authorization__form__container__card" id="authorization__form__container__card">
+                            <p class="authorization__form__container__error-message">Поле заполнено некорректно</p>
+                        </span>
+                </div>
+                <div class="authorization__form__container">
+                    <label for="authorization__form__container__phone">Номер телефона</label>
+                    <span>
+                            <input type="tel" placeholder="+7 (800) 555-35-35"  class="authorization__form__container__phone" id="authorization__form__container__phone">
+                            <p class="authorization__form__container__error-message">Поле заполнено некорректно</p>
+                        </span>
+                </div>
+                <div class="authorization__form__container">
+                    <button class="authorization__form__container__button"  type="submit">Войти</button>
+                </div>
+
+
+            </form>
+
+        </section>
+    </section>
+</main>
+
+<footer>
+    <div class="footer__container wrapper">
+        <a href="#"><img src="img/footer/logo.svg"></a>
+        <div class="footer__social">
+            <p class="footer__social__info">Мы в соцсетях:</p>
+            <div class="footer__social__img">
+                <a href="#"><img src="img/footer/social/youtube.svg"></a>
+                <a href="#"><img src="img/footer/social/facebook.svg"></a>
+                <a href="#"><img src="img/footer/social/inst.svg"></a>
+                <a href="#"><img src="img/footer/social/facebook.svg"></a>
+                <a href="#"><img src="img/footer/social/vk.svg"></a>
+            </div>
+        </div>
+        <div class="footer__container__adress">
+            <p class="footer__container__adress__p">+7 (800) 555-35-35</p>
+            <p class="footer__container__adress__p">ул. Тургеневская, 10/6</p>
+            <p class="footer__container__adress__p">example@email.ru</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

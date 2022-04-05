@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.min.css" />
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"></script>
+
+</head>
+<body>
+<select class="js-selectize" name="city" placeholder="Выберите город" style="width: 30%">
+    <option value=""></option>
+
+</select>
+
+<style>
+    .one{
+        font-size: 3rem;
+        width: 400px;
+    }
+    .one::placeholder{
+        font-size: 3rem;
+    }
+</style>
+<select class="one" placeholder="Выберите город">
+    <option value="Один"></option>
+    <option value="Два"></option>
+    <option value="Три"></option>
+    <option value="Четыре"></option>
+</select>
+    <script defer>
+        $(document).ready(function(){
+            $('.js-selectize').selectize();
+        });
+        const mass = ['Ростов', ' Таганрог', 'Шахты', 'Тимашевск'];
+        const select = document.querySelector('.js-selectize');
+        const option = document.createElement('OPTION');
+        mass.forEach(element => {
+            option.innerHTML = element;
+            option.value = element;
+            select.appendChild(option.cloneNode(true));
+    })
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

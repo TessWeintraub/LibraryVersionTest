@@ -1,0 +1,156 @@
+.search__form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 50px 0;
+}
+
+.search__form__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/*Смещение кнопки вправую сторону*/
+.search__form__container:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+/**/
+
+/*Стилизация checkbox*/
+.search__form__container__checkbox{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.search__form__container__checkbox+label{
+    display: flex;
+    align-items: center;
+    user-select: none;
+    font-family: MonserratRegular;
+    font-size: 1.25rem;
+}
+
+.search__form__container__checkbox+label::before{
+    content: '';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-left: 1rem ;
+    border: 1px solid #CB463E;
+    border-radius: 0.25rem;
+    font-size: 1.25rem;
+    color: #CB463E;
+}
+
+.search__form__container__checkbox:checked+label::before {
+    content: '✔';
+    border-color: #CB463E;
+    background-color: #CB463E;
+    color: #d0d0d0;
+}
+/**/
+
+.search__form__container__input{
+    display: flex;
+    padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+    background: url("../img/catalog/search.svg") no-repeat 3px 1px;
+    background-color: #FFFFFF;
+    background-size: 1.5rem;
+    background-position: center left 0.5rem;
+    width: 85%;
+    border: 0;
+    font-family: MonserratRegular;
+    font-size: 1.25rem;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    outline:none;
+}
+
+.search__form__container__input::placeholder{
+    font-family: MonserratRegular;
+    font-size: 1.25rem;
+}
+
+.search__form__container__input__author,
+.search__form__container__input__genre,
+.search__form__container__input__publishing{
+    display: flex;
+    font-family: MonserratRegular;
+    font-size:3.25rem;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: 0;
+    width: 24rem;
+}
+
+.search__form__container__button{
+    font-family: MonserratRegular;
+    font-size: 1.25rem;
+    color: #FFFFFF;
+    background-color: #CB463E;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    padding: 0.5rem 3rem;
+}
+
+
+
+
+
+.catalog__cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.05rem;
+}
+
+.catalog__cards h1{
+    width: 100%;
+    height: 3rem;
+    text-align: center;
+}
+
+
+
+
+
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pagination__ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.pagination__ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: MonserratRegular;
+    font-size: 1.125rem;
+    width: 2rem;
+    height: 2rem;
+    color: #FFFFFF;
+    background: #7d7d7d;
+    border-radius: 50%;
+    list-style-type: none;
+    transition: 0.5s;
+}
+li.pagination__active{
+    background: #CB463E;
+    transition: 0.5s;
+    transform: scale(1.2);
+}

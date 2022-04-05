@@ -1,0 +1,65 @@
+.authorization__form{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+.authorization__form__container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+/*Смещение кнопки вправо*/
+.authorization__form__container:last-child{
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+}
+/*Для подписи об ошибки заполнения поля*/
+authorization__form__container span{
+    position: relative;
+}
+.authorization__form__container__phone,.authorization__form__container__card{
+    font-family: MonserratRegular;
+    font-size: 1.5rem;
+    position: relative;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    padding: 0.75rem 0.75rem;
+    border-radius: 0.25rem;
+    border: 0;
+    width: 20rem;
+    outline:none;
+}
+.authorization__form__container__phone::placeholder,.authorization__form__container__card::placeholder{
+    color: #7d7d7d;
+}
+.authorization__form__container__error-message{
+    position: absolute;
+    padding: 0.3rem 1rem;
+    margin: 0;
+    display: none;
+    font-family: MonserratRegular;
+    font-size: 1rem;
+    color: #CB463E;
+
+}
+.authorization__form__container label{
+    font-family: MonserratRegular;
+    font-size: 1.5rem;
+    width: 25rem;
+}
+
+.authorization__form__container__button{
+    font-family: MonserratRegular;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    background: #CB463E;
+    padding: 0.5rem 4rem;
+    border: 0;
+    border-radius: 0.25rem;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+}

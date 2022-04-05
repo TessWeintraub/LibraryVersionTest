@@ -1,0 +1,230 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header{
+    display: flex;
+}
+
+footer{
+    display: flex;
+    background-color: #CB463E;
+    padding: 27px 0;
+}
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+h1{
+    font-weight: 400;
+}
+/*Сетка сайта*/
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+/**/
+
+
+/*Серый фон на секциях*/
+.background{
+    background-color: #D4D4D4;
+    background-size: 100vw;
+    min-width: 100%;
+}
+/**/
+
+/*Ссылки навигации на страницах Библиотека Каталог События Авторизаци*/
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.link_a{
+    font-family: MonserratRegular;
+    font-size: 1.5rem;
+    color: #CB463E;
+}
+.link_p{
+    font-family: MonserratRegular;
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+}
+/**/
+
+
+/*Заголовки и горизонтальная линия на страницах Библиотека Каталог Авторизация*/
+.library_h1, .search__h1, .authorization__h1, .catalog__error__h1{
+    font-family: MonserratRegular;
+    font-size: 2.25rem;
+}
+.library_hr, .search__hr, .authorization__hr{
+    height: 0.125rem;
+    background-color: #CB463E;
+}
+/**/
+
+
+
+
+
+@media (min-width: 1366px) and (max-width: 1440px){
+    .wrapper {
+        width: 1100px;
+        margin: 0 auto;
+        padding: 0px 20px;
+    }
+    .card__news{
+        height: 23.5rem!important;
+    }
+    .card__event{
+        width: 22rem!important;
+        height: 19.5rem;
+    }
+    .card__event img{
+        width: 22rem!important;
+        height: 19.5rem;
+    }
+    .card__book:last-child{
+        display: none;
+    }
+    .popular__cards{
+        gap: 4rem!important;
+    }
+    .search__form__container__input{
+        width: 80%!important;
+    }
+    .search__form__container__input__author,
+    .search__form__container__input__genre,
+    .search__form__container__input__publishing{
+        width: 22rem!important;
+    }
+    .catalog__cards{
+        gap: 4rem!important;
+    }
+
+}
+@media (min-width: 1280px) and (max-width: 1366px){
+    .wrapper{
+        width: 1000px;
+        margin: 0 auto;
+        padding: 0px 20px;
+    }
+    .card__news{
+        height: 22.5rem!important;
+    }
+    .card__event{
+        width: 20rem!important;
+        height: 19.5rem!important;
+    }
+    .card__event img{
+        width: 20rem!important;
+        height: 19.5rem!important;
+    }
+    .card__book:last-child{
+        display: none;
+    }
+    .search__form__container__input{
+        width: 80%!important;
+    }
+    .search__form__container__input__author,
+    .search__form__container__input__genre,
+    .search__form__container__input__publishing{
+        width: 20rem!important;
+    }
+    .popular__cards{
+        gap: 2rem!important;
+    }
+    .catalog__cards{
+        gap: 2rem!important;
+    }
+}
+@media (min-width: 980px) and (max-width: 1280px){
+    .wrapper{
+        width: 900px;
+        margin: 0 auto;
+        padding: 0px 40px;
+    }
+    .search__form__container__input{
+        width: 75%!important;
+    }
+    .search__form__container__input__author,
+    .search__form__container__input__genre,
+    .search__form__container__input__publishing{
+        width: calc(95%/3)!important;
+    }
+    .card__book{
+        width: 13rem!important;
+    }
+    .card__book img{
+        width: 13rem!important;
+    }
+    .card__book:last-child{
+        display: none;
+    }
+    .card__event:last-child{
+        display: none;
+    }
+}
+@media (min-width: 768px) and (max-width: 980px){
+    .wrapper{
+        width: 740px;
+        margin: 0 auto;
+        padding: 0px 20px;
+    }
+    .card__book:nth-child(n+4):nth-child(-n+5){
+        display: none!important;
+    }
+    .card__news:nth-child(n+4):nth-child(-n+5){
+        display: none!important;
+    }
+    .card__event{
+        width: 22rem!important;
+        height: 19rem!important;
+    }
+    .card__event img{
+        width: 22rem!important;
+        height: 19rem!important;
+    }
+    .card__event:last-child{
+        display: none;
+    }
+    .search__form__container__input{
+        width: 75%!important;
+    }
+    .search__form__container__input__author,
+    .search__form__container__input__genre,
+    .search__form__container__input__publishing{
+        width: 100%!important;
+    }
+    .card__book{
+        width: 14.5rem!important;
+    }
+    .card__book img{
+        width: 14.5rem!important;
+    }
+    .authorization__form__container span{
+        width: 100%!important;
+    }
+    .authorization__form__container__phone,.authorization__form__container__card{
+        width: 97%!important;
+    }
+    /*.catalog__cards{*/
+    /*    gap: 3.6rem!important;*/
+    /*}*/
+}
+

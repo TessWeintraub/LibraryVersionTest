@@ -1,0 +1,28 @@
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__social__info{
+    font-family: MonserratMedium;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: white;
+}
+
+.footer__container__adress__p{
+    font-family: MonserratMedium;
+    font-size: 0.8rem;
+    color: white;
+    text-align: right;
+}
+
+.footer__social__img a{
+    padding: 0 0.9375rem;
+}
+
+.footer__social__info{
+    padding: 0.9375rem;
+    margin: 0;
+}

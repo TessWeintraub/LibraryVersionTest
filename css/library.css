@@ -1,0 +1,32 @@
+
+.library__today__h2, .library__info__h2, .library__working__info__h2{
+    font-family: MonserratMedium;
+    font-size: 1.25rem;
+    color: #CB463E;
+}
+.library__today__p, .library__info__p{
+    font-family: MonserratRegular;
+    font-size: 1rem;
+}
+.library__info__img, .library__today__img{
+    width: 100%;
+}
+.library__working{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.875rem 0 0.9375rem 0;
+}
+.library__today{
+    padding: 0.9375rem 0;
+}
+.library__working__img{
+    width: 75%;
+}
+.library__working__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 20%;
+}
