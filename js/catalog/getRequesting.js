@@ -6,6 +6,7 @@ export const getRequesting = (url) => {
         try {
             const responseJson = getRequest.responseText;
             const data = JSON.parse(responseJson);
+            console.log(data);
             result = data
         } catch (e) {
             console.log("Error getOnload: " + e);
