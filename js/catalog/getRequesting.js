@@ -1,7 +1,7 @@
 export const getRequesting = (url) => {
     const getRequest = new XMLHttpRequest();
     let result
-    getRequest.open("GET", url, false);
+    getRequest.open("GET", url, true);
     getRequest.onload = function getOnload() {
         try {
             const responseJson = getRequest.responseText;
