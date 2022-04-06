@@ -8,4 +8,4 @@ $(document).ready(function(){
         pager: true,
     });
 });
-window.onload = createPopularCards('../../db/books.json')
+window.onload = createPopularCards('https://github.com/TessWeintraub/LibraryVersionTest/blob/main/db/books.json')
