@@ -7,10 +7,10 @@ import {buttonCreating} from "./buttonCreating.js";
 import {selectCreating} from "./selectCreating.js";
 
 
-const bookData = getRequesting("../../db/books.json")
-const author = getRequesting("../../db/author.json")
-const genre =getRequesting("../../db/genre.json")
-const publishing =getRequesting("../db/publishingHouse.json")
+const bookData = getRequesting("https://tessweintraub.github.io/db/books.json")
+const author = getRequesting("https://tessweintraub.github.io/db/db/author.json")
+const genre =getRequesting("https://tessweintraub.github.io/db/db/genre.json")
+const publishing =getRequesting("https://tessweintraub.github.io/db//publishingHouse.json")
 document.querySelector('.search__form__container__button').onclick = ()=>{filtering(bookData)}
 
 $(document).ready(function(){
